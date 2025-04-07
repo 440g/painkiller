@@ -31,7 +31,7 @@ Team repository for the pattern recognition project; Online news popularity pred
 * model selection w/ baseline
 ### Evaluation
 * ?
-
+---
 * `code.ipynb` : 각 파트 분담해서 작성한 뒤 통합 & 제출
 * `getting_started.ipynb` : reproducibility 보장 
 
