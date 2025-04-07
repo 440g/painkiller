@@ -38,7 +38,7 @@ Team repository for the pattern recognition project; Online news popularity pred
 ## Getting started
 
 ## Contributors
-|[Minseo Kim](https://github.com/440g)|[-](https://github.com/99un9u)|[-](https://github.com/dbwls0087)|[-](https://github.com/leechmola)|
+|[Minseo Kim](https://github.com/440g)|[99un9u](https://github.com/99un9u)|[dbwls0087](https://github.com/dbwls0087)|[leechmola](https://github.com/leechmola)|
 |:---:|:---:|:---:|:---:|
 |Project Management|-|-|-|
 ---
