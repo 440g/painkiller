@@ -30,7 +30,7 @@ Team repository for the pattern recognition project; Online news popularity pred
 ### Model Design
 * model selection w/ baseline
 ### Evaluation
-* ?
+* 
 ---
 * `code.ipynb` : 각 파트 분담해서 작성한 뒤 통합 & 제출
 * `getting_started.ipynb` : reproducibility 보장 
@@ -40,5 +40,5 @@ Team repository for the pattern recognition project; Online news popularity pred
 ## Contributors
 |[Minseo Kim](https://github.com/440g)|[99un9u](https://github.com/99un9u)|[dbwls0087](https://github.com/dbwls0087)|[leechmola](https://github.com/leechmola)|
 |:---:|:---:|:---:|:---:|
-|Project Management|-|-|-|
+|-|-|-|-|
 ---
