@@ -14,26 +14,34 @@ Team repository for the pattern recognition project; Online news popularity pred
  ┃ ┣ 📜test.csv
  ┃ ┗ 📜train.csv
  ┣ 📂src
- ┃ ┣ 📜1_feature_selection.ipynb
- ┃ ┣ 📜2_feature_engineering.ipynb
- ┃ ┣ 📜3_model_selection.ipynb
- ┃ ┗ 📜4_evaluation.ipynb
+ ┃ ┣ 📜data.ipynb
+ ┃ ┣ 📜model.ipynb
+ ┃ ┗ 📜evaluation.ipynb
  ┣ 📜README.md
  ┣ 📜code.ipynb
  ┗ 📜getting_started.ipynb
 </div>
 </details>
 
-### Data prepartaion
-* feature engineering
-* feature selection
-### Model Design
-* model selection w/ baseline
+### Data
+* Data Exploration
+* Preprocessing
+    * Data cleaning
+    * Feature engineering
+    * Feature selection
+* Data split
+
+### Model
+* Training and Validation
+* Test set preprocessing
+
 ### Evaluation
-* 
+* Evaluation
+
 ---
 * `code.ipynb` : 각 파트 분담해서 작성한 뒤 통합 & 제출
-* `getting_started.ipynb` : reproducibility 보장 
+* `getting_started.ipynb` : reproducibility 보장
+
 
 ## Getting started
 
