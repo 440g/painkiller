@@ -1,0 +1,236 @@
+{
+    "columns": [
+        "id",
+        "n_tokens_title",
+        "n_tokens_content",
+        "n_unique_tokens",
+        "n_non_stop_words",
+        "n_non_stop_unique_tokens",
+        "num_hrefs",
+        "num_self_hrefs",
+        "num_imgs",
+        "num_videos",
+        "average_token_length",
+        "num_keywords",
+        "kw_min_min",
+        "kw_max_min",
+        "kw_avg_min",
+        "kw_min_max",
+        "kw_max_max",
+        "kw_avg_max",
+        "kw_min_avg",
+        "kw_max_avg",
+        "kw_avg_avg",
+        "self_reference_min_shares",
+        "self_reference_max_shares",
+        "self_reference_avg_sharess",
+        "LDA_00",
+        "LDA_01",
+        "LDA_02",
+        "LDA_03",
+        "LDA_04",
+        "global_subjectivity",
+        "global_sentiment_polarity",
+        "global_rate_positive_words",
+        "global_rate_negative_words",
+        "rate_positive_words",
+        "rate_negative_words",
+        "avg_positive_polarity",
+        "min_positive_polarity",
+        "max_positive_polarity",
+        "avg_negative_polarity",
+        "min_negative_polarity",
+        "max_negative_polarity",
+        "title_subjectivity",
+        "title_sentiment_polarity",
+        "abs_title_subjectivity",
+        "abs_title_sentiment_polarity",
+        "data_channel",
+        "weekday",
+        "shares"
+    ],
+    "rows": 17760,
+    "cols": 48,
+    "target_is_numeric": true,
+    "columns_info": {
+        "id": [
+            "scale"
+        ],
+        "n_tokens_title": [
+            "missing_values",
+            "scale"
+        ],
+        "n_tokens_content": [
+            "missing_values",
+            "scale"
+        ],
+        "n_unique_tokens": [
+            "missing_values",
+            "scale"
+        ],
+        "n_non_stop_words": [
+            "missing_values",
+            "scale"
+        ],
+        "n_non_stop_unique_tokens": [
+            "missing_values",
+            "scale"
+        ],
+        "num_hrefs": [
+            "missing_values",
+            "scale"
+        ],
+        "num_self_hrefs": [
+            "missing_values",
+            "scale"
+        ],
+        "num_imgs": [
+            "missing_values",
+            "scale"
+        ],
+        "num_videos": [
+            "missing_values",
+            "scale"
+        ],
+        "average_token_length": [
+            "missing_values",
+            "scale"
+        ],
+        "num_keywords": [
+            "missing_values",
+            "scale"
+        ],
+        "kw_min_min": [
+            "missing_values",
+            "scale"
+        ],
+        "kw_max_min": [
+            "missing_values",
+            "scale"
+        ],
+        "kw_avg_min": [
+            "missing_values",
+            "scale"
+        ],
+        "kw_min_max": [
+            "missing_values",
+            "scale"
+        ],
+        "kw_max_max": [
+            "missing_values",
+            "scale"
+        ],
+        "kw_avg_max": [
+            "missing_values",
+            "scale"
+        ],
+        "kw_min_avg": [
+            "missing_values",
+            "scale"
+        ],
+        "kw_max_avg": [
+            "missing_values",
+            "scale"
+        ],
+        "kw_avg_avg": [
+            "missing_values",
+            "scale"
+        ],
+        "self_reference_min_shares": [
+            "missing_values",
+            "scale"
+        ],
+        "self_reference_max_shares": [
+            "missing_values",
+            "scale"
+        ],
+        "self_reference_avg_sharess": [
+            "missing_values",
+            "scale"
+        ],
+        "LDA_00": [
+            "missing_values"
+        ],
+        "LDA_01": [
+            "missing_values"
+        ],
+        "LDA_02": [
+            "missing_values"
+        ],
+        "LDA_03": [
+            "missing_values"
+        ],
+        "LDA_04": [
+            "missing_values"
+        ],
+        "global_subjectivity": [
+            "missing_values"
+        ],
+        "global_sentiment_polarity": [
+            "missing_values"
+        ],
+        "global_rate_positive_words": [
+            "missing_values"
+        ],
+        "global_rate_negative_words": [
+            "missing_values"
+        ],
+        "rate_positive_words": [
+            "missing_values",
+            "scale"
+        ],
+        "rate_negative_words": [
+            "missing_values"
+        ],
+        "avg_positive_polarity": [
+            "missing_values"
+        ],
+        "min_positive_polarity": [
+            "missing_values"
+        ],
+        "max_positive_polarity": [
+            "missing_values",
+            "scale"
+        ],
+        "avg_negative_polarity": [
+            "missing_values"
+        ],
+        "min_negative_polarity": [
+            "missing_values",
+            "scale"
+        ],
+        "max_negative_polarity": [
+            "missing_values"
+        ],
+        "title_subjectivity": [
+            "missing_values"
+        ],
+        "title_sentiment_polarity": [
+            "missing_values"
+        ],
+        "abs_title_subjectivity": [
+            "missing_values"
+        ],
+        "abs_title_sentiment_polarity": [
+            "missing_values"
+        ],
+        "data_channel": [
+            "missing_values",
+            "categorical",
+            "few_categories"
+        ],
+        "weekday": [
+            "missing_values",
+            "categorical",
+            "few_categories"
+        ],
+        "shares": [
+            "scale"
+        ]
+    },
+    "target_info": [],
+    "n_features": 48,
+    "is_sample_weighted": false,
+    "is_fairness_applied": false,
+    "n_classes": 2
+}

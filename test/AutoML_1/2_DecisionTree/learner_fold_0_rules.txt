@@ -1,0 +1,4 @@
+if (shares <= 1450.0) then class: 0 (proba: 100.0%) | based on 6,727 samples
+
+if (shares > 1450.0) then class: 1 (proba: 100.0%) | based on 6,593 samples
+

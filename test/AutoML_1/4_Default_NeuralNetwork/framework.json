@@ -1,0 +1,653 @@
+{
+    "uid": "e04f0150-7c6f-4edb-89d9-0869e9522f84",
+    "name": "4_Default_NeuralNetwork",
+    "preprocessing": [
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "n_tokens_title": 10.0,
+                        "n_tokens_content": 410.0,
+                        "n_unique_tokens": 0.539351850603,
+                        "n_non_stop_words": 0.999999995984,
+                        "n_non_stop_unique_tokens": 0.6914589627509999,
+                        "num_hrefs": 7.0,
+                        "num_self_hrefs": 3.0,
+                        "num_imgs": 1.0,
+                        "num_videos": 0.0,
+                        "average_token_length": 4.66599190283,
+                        "num_keywords": 7.0,
+                        "kw_min_min": -1.0,
+                        "kw_max_min": 658.5,
+                        "kw_avg_min": 235.625,
+                        "kw_min_max": 1500.0,
+                        "kw_max_max": 843300.0,
+                        "kw_avg_max": 244558.33333350002,
+                        "kw_min_avg": 1023.14285714,
+                        "kw_max_avg": 4347.60671835,
+                        "kw_avg_avg": 2868.25698767,
+                        "self_reference_min_shares": 1200.0,
+                        "self_reference_max_shares": 2900.0,
+                        "self_reference_avg_sharess": 2200.0,
+                        "LDA_00": 0.033381735531450005,
+                        "LDA_01": 0.0333471342512,
+                        "LDA_02": 0.0400157851737,
+                        "LDA_03": 0.0400012531669,
+                        "LDA_04": 0.0403000946745,
+                        "global_subjectivity": 0.453310704447,
+                        "global_sentiment_polarity": 0.118989133762,
+                        "global_rate_positive_words": 0.038961038961,
+                        "global_rate_negative_words": 0.015306122449,
+                        "rate_positive_words": 0.709677419355,
+                        "rate_negative_words": 0.277777777778,
+                        "avg_positive_polarity": 0.35927651515150005,
+                        "min_positive_polarity": 0.1,
+                        "max_positive_polarity": 0.8,
+                        "avg_negative_polarity": -0.253333333333,
+                        "min_negative_polarity": -0.5,
+                        "max_negative_polarity": -0.1,
+                        "title_subjectivity": 0.15,
+                        "title_sentiment_polarity": 0.0,
+                        "abs_title_subjectivity": 0.5,
+                        "abs_title_sentiment_polarity": 0.0,
+                        "data_channel": "World",
+                        "weekday": "Wednesday"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "data_channel": {
+                            "Business": 0,
+                            "Entertainment": 1,
+                            "Lifestyle": 2,
+                            "Social Media": 3,
+                            "Tech": 4,
+                            "World": 5
+                        },
+                        "weekday": {
+                            "Friday": 0,
+                            "Monday": 1,
+                            "Saturday": 2,
+                            "Sunday": 3,
+                            "Thursday": 4,
+                            "Tuesday": 5,
+                            "Wednesday": 6
+                        }
+                    },
+                    "columns": [
+                        "data_channel",
+                        "weekday"
+                    ]
+                }
+            ],
+            "scale": [
+                {
+                    "scale": [
+                        11433.002734963167,
+                        2.002660127061369,
+                        436.0873665740843,
+                        0.1327807875028643,
+                        0.16583795119974956,
+                        0.14950269323954393,
+                        10.306094921427146,
+                        3.5702507697362162,
+                        7.8713278499129045,
+                        3.6680553471566624,
+                        0.8127604272166012,
+                        1.821500644752306,
+                        66.66908425313045,
+                        3407.8965141405765,
+                        678.2985966150177,
+                        52904.74166542571,
+                        206443.475965077,
+                        128999.76874155136,
+                        1078.7165214912156,
+                        5835.053586424227,
+                        1275.382913537329,
+                        17893.538651383627,
+                        37754.07644728111,
+                        21257.51982582498,
+                        0.1813830133848565,
+                        0.23691567963152196,
+                        0.27396004679229974,
+                        1.8449763227003806,
+                        2.1924225358744254,
+                        14177.573480866304
+                    ],
+                    "mean": [
+                        19867.192417417416,
+                        10.361861861861861,
+                        531.1975975975976,
+                        0.5306317692665456,
+                        0.9716966919747386,
+                        0.6736525734125466,
+                        10.395195195195194,
+                        3.2524774774774774,
+                        4.176951951951952,
+                        1.071096096096096,
+                        4.559245775631352,
+                        7.180930930930931,
+                        23.495345345345346,
+                        1110.632816066066,
+                        313.25941941167,
+                        12225.11463963964,
+                        760753.9039039039,
+                        258313.47500895453,
+                        1106.0034547289567,
+                        5572.244891036896,
+                        3113.7780948890995,
+                        3615.762595345345,
+                        9302.13003003003,
+                        5736.244513807989,
+                        0.6844244924861892,
+                        0.7611111208611208,
+                        -0.5212017145350624,
+                        2.8075075075075073,
+                        3.5392642642642644,
+                        3585.9415165165165
+                    ],
+                    "var": [
+                        130713551.53767525,
+                        4.010647584521458,
+                        190172.19128551977,
+                        0.017630737529880803,
+                        0.02750222605813052,
+                        0.022351055285877178,
+                        106.2155925294664,
+                        12.746690558802046,
+                        61.95780212081451,
+                        13.454630029804582,
+                        0.6605795120493122,
+                        3.317864598833067,
+                        4444.766795151006,
+                        11613758.651091492,
+                        460088.98616990243,
+                        2798911690.6854315,
+                        42618908768.54332,
+                        16640940335.373734,
+                        1163629.3337381084,
+                        34047850.356442235,
+                        1626601.5761429658,
+                        320178725.46855974,
+                        1425370288.3871462,
+                        451882149.1453421,
+                        0.03289979754457103,
+                        0.05612903925526595,
+                        0.07505410723843906,
+                        3.403937631325019,
+                        4.806716575810046,
+                        201003589.80536348
+                    ],
+                    "n_samples_seen": 13320,
+                    "n_features_in": 30,
+                    "columns": [
+                        "id",
+                        "n_tokens_title",
+                        "n_tokens_content",
+                        "n_unique_tokens",
+                        "n_non_stop_words",
+                        "n_non_stop_unique_tokens",
+                        "num_hrefs",
+                        "num_self_hrefs",
+                        "num_imgs",
+                        "num_videos",
+                        "average_token_length",
+                        "num_keywords",
+                        "kw_min_min",
+                        "kw_max_min",
+                        "kw_avg_min",
+                        "kw_min_max",
+                        "kw_max_max",
+                        "kw_avg_max",
+                        "kw_min_avg",
+                        "kw_max_avg",
+                        "kw_avg_avg",
+                        "self_reference_min_shares",
+                        "self_reference_max_shares",
+                        "self_reference_avg_sharess",
+                        "rate_positive_words",
+                        "max_positive_polarity",
+                        "min_negative_polarity",
+                        "data_channel",
+                        "weekday",
+                        "shares"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "id": [
+                        "scale_normal"
+                    ],
+                    "n_tokens_title": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "n_tokens_content": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "n_unique_tokens": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "n_non_stop_words": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "n_non_stop_unique_tokens": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "num_hrefs": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "num_self_hrefs": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "num_imgs": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "num_videos": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "average_token_length": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "num_keywords": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "kw_min_min": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "kw_max_min": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "kw_avg_min": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "kw_min_max": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "kw_max_max": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "kw_avg_max": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "kw_min_avg": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "kw_max_avg": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "kw_avg_avg": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "self_reference_min_shares": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "self_reference_max_shares": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "self_reference_avg_sharess": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "LDA_00": [
+                        "na_fill_median"
+                    ],
+                    "LDA_01": [
+                        "na_fill_median"
+                    ],
+                    "LDA_02": [
+                        "na_fill_median"
+                    ],
+                    "LDA_03": [
+                        "na_fill_median"
+                    ],
+                    "LDA_04": [
+                        "na_fill_median"
+                    ],
+                    "global_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "global_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "global_rate_positive_words": [
+                        "na_fill_median"
+                    ],
+                    "global_rate_negative_words": [
+                        "na_fill_median"
+                    ],
+                    "rate_positive_words": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "rate_negative_words": [
+                        "na_fill_median"
+                    ],
+                    "avg_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "min_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "max_positive_polarity": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "avg_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "min_negative_polarity": [
+                        "na_fill_median",
+                        "scale_normal"
+                    ],
+                    "max_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "title_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "title_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "abs_title_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "abs_title_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "data_channel": [
+                        "na_fill_median",
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "weekday": [
+                        "na_fill_median",
+                        "categorical_to_int",
+                        "scale_normal"
+                    ],
+                    "shares": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.6.1",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "1025ce1c-1073-437b-9e97-c3433b32773d",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "dense_1_size": 32,
+                "dense_2_size": 16,
+                "learning_rate": 0.05,
+                "seed": 4,
+                "explain_level": 1
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "id": [
+                    "scale_normal"
+                ],
+                "n_tokens_title": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "n_tokens_content": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "n_unique_tokens": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "n_non_stop_words": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "n_non_stop_unique_tokens": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "num_hrefs": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "num_self_hrefs": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "num_imgs": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "num_videos": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "average_token_length": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "num_keywords": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "kw_min_min": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "kw_max_min": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "kw_avg_min": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "kw_min_max": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "kw_max_max": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "kw_avg_max": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "kw_min_avg": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "kw_max_avg": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "kw_avg_avg": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "self_reference_min_shares": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "self_reference_max_shares": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "self_reference_avg_sharess": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "LDA_00": [
+                    "na_fill_median"
+                ],
+                "LDA_01": [
+                    "na_fill_median"
+                ],
+                "LDA_02": [
+                    "na_fill_median"
+                ],
+                "LDA_03": [
+                    "na_fill_median"
+                ],
+                "LDA_04": [
+                    "na_fill_median"
+                ],
+                "global_subjectivity": [
+                    "na_fill_median"
+                ],
+                "global_sentiment_polarity": [
+                    "na_fill_median"
+                ],
+                "global_rate_positive_words": [
+                    "na_fill_median"
+                ],
+                "global_rate_negative_words": [
+                    "na_fill_median"
+                ],
+                "rate_positive_words": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "rate_negative_words": [
+                    "na_fill_median"
+                ],
+                "avg_positive_polarity": [
+                    "na_fill_median"
+                ],
+                "min_positive_polarity": [
+                    "na_fill_median"
+                ],
+                "max_positive_polarity": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "avg_negative_polarity": [
+                    "na_fill_median"
+                ],
+                "min_negative_polarity": [
+                    "na_fill_median",
+                    "scale_normal"
+                ],
+                "max_negative_polarity": [
+                    "na_fill_median"
+                ],
+                "title_subjectivity": [
+                    "na_fill_median"
+                ],
+                "title_sentiment_polarity": [
+                    "na_fill_median"
+                ],
+                "abs_title_subjectivity": [
+                    "na_fill_median"
+                ],
+                "abs_title_sentiment_polarity": [
+                    "na_fill_median"
+                ],
+                "data_channel": [
+                    "na_fill_median",
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "weekday": [
+                    "na_fill_median",
+                    "categorical_to_int",
+                    "scale_normal"
+                ],
+                "shares": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "binary_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_1/X.data",
+            "y_path": "AutoML_1/y.data",
+            "results_path": "AutoML_1"
+        },
+        "learner": {
+            "model_type": "Neural Network",
+            "ml_task": "binary_classification",
+            "n_jobs": -1,
+            "dense_1_size": 32,
+            "dense_2_size": 16,
+            "learning_rate": 0.05,
+            "seed": 4,
+            "explain_level": 1
+        },
+        "automl_random_state": 1234,
+        "ml_task": "binary_classification",
+        "explain_level": 1,
+        "name": "4_Default_NeuralNetwork",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 60
+    },
+    "saved": [
+        "4_Default_NeuralNetwork/learner_fold_0.neural_network"
+    ],
+    "predictions_fname": "4_Default_NeuralNetwork/predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": "0.07091934353178433",
+    "train_time": 5.271993160247803,
+    "is_stacked": false,
+    "joblib_version": "1.4.2",
+    "threshold": 0.4397420418493727
+}

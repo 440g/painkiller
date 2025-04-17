@@ -1,0 +1,460 @@
+{
+    "uid": "e0ebe7da-3d94-498b-8a0c-144e486a9c7f",
+    "name": "3_Default_Xgboost",
+    "preprocessing": [
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "n_tokens_title": 10.0,
+                        "n_tokens_content": 410.0,
+                        "n_unique_tokens": 0.539351850603,
+                        "n_non_stop_words": 0.999999995984,
+                        "n_non_stop_unique_tokens": 0.6914589627509999,
+                        "num_hrefs": 7.0,
+                        "num_self_hrefs": 3.0,
+                        "num_imgs": 1.0,
+                        "num_videos": 0.0,
+                        "average_token_length": 4.66599190283,
+                        "num_keywords": 7.0,
+                        "kw_min_min": -1.0,
+                        "kw_max_min": 658.5,
+                        "kw_avg_min": 235.625,
+                        "kw_min_max": 1500.0,
+                        "kw_max_max": 843300.0,
+                        "kw_avg_max": 244558.33333350002,
+                        "kw_min_avg": 1023.14285714,
+                        "kw_max_avg": 4347.60671835,
+                        "kw_avg_avg": 2868.25698767,
+                        "self_reference_min_shares": 1200.0,
+                        "self_reference_max_shares": 2900.0,
+                        "self_reference_avg_sharess": 2200.0,
+                        "LDA_00": 0.033381735531450005,
+                        "LDA_01": 0.0333471342512,
+                        "LDA_02": 0.0400157851737,
+                        "LDA_03": 0.0400012531669,
+                        "LDA_04": 0.0403000946745,
+                        "global_subjectivity": 0.453310704447,
+                        "global_sentiment_polarity": 0.118989133762,
+                        "global_rate_positive_words": 0.038961038961,
+                        "global_rate_negative_words": 0.015306122449,
+                        "rate_positive_words": 0.709677419355,
+                        "rate_negative_words": 0.277777777778,
+                        "avg_positive_polarity": 0.35927651515150005,
+                        "min_positive_polarity": 0.1,
+                        "max_positive_polarity": 0.8,
+                        "avg_negative_polarity": -0.253333333333,
+                        "min_negative_polarity": -0.5,
+                        "max_negative_polarity": -0.1,
+                        "title_subjectivity": 0.15,
+                        "title_sentiment_polarity": 0.0,
+                        "abs_title_subjectivity": 0.5,
+                        "abs_title_sentiment_polarity": 0.0,
+                        "data_channel": "World",
+                        "weekday": "Wednesday"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "categorical": [
+                {
+                    "convert_method": "categorical_to_int",
+                    "convert_params": {
+                        "data_channel": {
+                            "Business": 0,
+                            "Entertainment": 1,
+                            "Lifestyle": 2,
+                            "Social Media": 3,
+                            "Tech": 4,
+                            "World": 5
+                        },
+                        "weekday": {
+                            "Friday": 0,
+                            "Monday": 1,
+                            "Saturday": 2,
+                            "Sunday": 3,
+                            "Thursday": 4,
+                            "Tuesday": 5,
+                            "Wednesday": 6
+                        }
+                    },
+                    "columns": [
+                        "data_channel",
+                        "weekday"
+                    ]
+                }
+            ],
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "n_tokens_title": [
+                        "na_fill_median"
+                    ],
+                    "n_tokens_content": [
+                        "na_fill_median"
+                    ],
+                    "n_unique_tokens": [
+                        "na_fill_median"
+                    ],
+                    "n_non_stop_words": [
+                        "na_fill_median"
+                    ],
+                    "n_non_stop_unique_tokens": [
+                        "na_fill_median"
+                    ],
+                    "num_hrefs": [
+                        "na_fill_median"
+                    ],
+                    "num_self_hrefs": [
+                        "na_fill_median"
+                    ],
+                    "num_imgs": [
+                        "na_fill_median"
+                    ],
+                    "num_videos": [
+                        "na_fill_median"
+                    ],
+                    "average_token_length": [
+                        "na_fill_median"
+                    ],
+                    "num_keywords": [
+                        "na_fill_median"
+                    ],
+                    "kw_min_min": [
+                        "na_fill_median"
+                    ],
+                    "kw_max_min": [
+                        "na_fill_median"
+                    ],
+                    "kw_avg_min": [
+                        "na_fill_median"
+                    ],
+                    "kw_min_max": [
+                        "na_fill_median"
+                    ],
+                    "kw_max_max": [
+                        "na_fill_median"
+                    ],
+                    "kw_avg_max": [
+                        "na_fill_median"
+                    ],
+                    "kw_min_avg": [
+                        "na_fill_median"
+                    ],
+                    "kw_max_avg": [
+                        "na_fill_median"
+                    ],
+                    "kw_avg_avg": [
+                        "na_fill_median"
+                    ],
+                    "self_reference_min_shares": [
+                        "na_fill_median"
+                    ],
+                    "self_reference_max_shares": [
+                        "na_fill_median"
+                    ],
+                    "self_reference_avg_sharess": [
+                        "na_fill_median"
+                    ],
+                    "LDA_00": [
+                        "na_fill_median"
+                    ],
+                    "LDA_01": [
+                        "na_fill_median"
+                    ],
+                    "LDA_02": [
+                        "na_fill_median"
+                    ],
+                    "LDA_03": [
+                        "na_fill_median"
+                    ],
+                    "LDA_04": [
+                        "na_fill_median"
+                    ],
+                    "global_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "global_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "global_rate_positive_words": [
+                        "na_fill_median"
+                    ],
+                    "global_rate_negative_words": [
+                        "na_fill_median"
+                    ],
+                    "rate_positive_words": [
+                        "na_fill_median"
+                    ],
+                    "rate_negative_words": [
+                        "na_fill_median"
+                    ],
+                    "avg_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "min_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "max_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "avg_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "min_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "max_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "title_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "title_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "abs_title_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "abs_title_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "data_channel": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ],
+                    "weekday": [
+                        "na_fill_median",
+                        "categorical_to_int"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "3.0.0",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "00b2d8af-0ac2-4f04-8115-26575a9c371b",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "objective": "binary:logistic",
+                "eta": 0.075,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 3,
+                "eval_metric": "logloss",
+                "explain_level": 1
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "n_tokens_title": [
+                    "na_fill_median"
+                ],
+                "n_tokens_content": [
+                    "na_fill_median"
+                ],
+                "n_unique_tokens": [
+                    "na_fill_median"
+                ],
+                "n_non_stop_words": [
+                    "na_fill_median"
+                ],
+                "n_non_stop_unique_tokens": [
+                    "na_fill_median"
+                ],
+                "num_hrefs": [
+                    "na_fill_median"
+                ],
+                "num_self_hrefs": [
+                    "na_fill_median"
+                ],
+                "num_imgs": [
+                    "na_fill_median"
+                ],
+                "num_videos": [
+                    "na_fill_median"
+                ],
+                "average_token_length": [
+                    "na_fill_median"
+                ],
+                "num_keywords": [
+                    "na_fill_median"
+                ],
+                "kw_min_min": [
+                    "na_fill_median"
+                ],
+                "kw_max_min": [
+                    "na_fill_median"
+                ],
+                "kw_avg_min": [
+                    "na_fill_median"
+                ],
+                "kw_min_max": [
+                    "na_fill_median"
+                ],
+                "kw_max_max": [
+                    "na_fill_median"
+                ],
+                "kw_avg_max": [
+                    "na_fill_median"
+                ],
+                "kw_min_avg": [
+                    "na_fill_median"
+                ],
+                "kw_max_avg": [
+                    "na_fill_median"
+                ],
+                "kw_avg_avg": [
+                    "na_fill_median"
+                ],
+                "self_reference_min_shares": [
+                    "na_fill_median"
+                ],
+                "self_reference_max_shares": [
+                    "na_fill_median"
+                ],
+                "self_reference_avg_sharess": [
+                    "na_fill_median"
+                ],
+                "LDA_00": [
+                    "na_fill_median"
+                ],
+                "LDA_01": [
+                    "na_fill_median"
+                ],
+                "LDA_02": [
+                    "na_fill_median"
+                ],
+                "LDA_03": [
+                    "na_fill_median"
+                ],
+                "LDA_04": [
+                    "na_fill_median"
+                ],
+                "global_subjectivity": [
+                    "na_fill_median"
+                ],
+                "global_sentiment_polarity": [
+                    "na_fill_median"
+                ],
+                "global_rate_positive_words": [
+                    "na_fill_median"
+                ],
+                "global_rate_negative_words": [
+                    "na_fill_median"
+                ],
+                "rate_positive_words": [
+                    "na_fill_median"
+                ],
+                "rate_negative_words": [
+                    "na_fill_median"
+                ],
+                "avg_positive_polarity": [
+                    "na_fill_median"
+                ],
+                "min_positive_polarity": [
+                    "na_fill_median"
+                ],
+                "max_positive_polarity": [
+                    "na_fill_median"
+                ],
+                "avg_negative_polarity": [
+                    "na_fill_median"
+                ],
+                "min_negative_polarity": [
+                    "na_fill_median"
+                ],
+                "max_negative_polarity": [
+                    "na_fill_median"
+                ],
+                "title_subjectivity": [
+                    "na_fill_median"
+                ],
+                "title_sentiment_polarity": [
+                    "na_fill_median"
+                ],
+                "abs_title_subjectivity": [
+                    "na_fill_median"
+                ],
+                "abs_title_sentiment_polarity": [
+                    "na_fill_median"
+                ],
+                "data_channel": [
+                    "na_fill_median",
+                    "categorical_to_int"
+                ],
+                "weekday": [
+                    "na_fill_median",
+                    "categorical_to_int"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "binary_classification"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_1/X.data",
+            "y_path": "AutoML_1/y.data",
+            "results_path": "AutoML_1"
+        },
+        "learner": {
+            "model_type": "Xgboost",
+            "ml_task": "binary_classification",
+            "n_jobs": -1,
+            "objective": "binary:logistic",
+            "eta": 0.075,
+            "max_depth": 6,
+            "min_child_weight": 1,
+            "subsample": 1.0,
+            "colsample_bytree": 1.0,
+            "seed": 3,
+            "eval_metric": "logloss",
+            "explain_level": 1
+        },
+        "automl_random_state": 1234,
+        "ml_task": "binary_classification",
+        "explain_level": 1,
+        "name": "3_Default_Xgboost",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 60
+    },
+    "saved": [
+        "3_Default_Xgboost/learner_fold_0.xgboost.json"
+    ],
+    "predictions_fname": "3_Default_Xgboost/predictions_validation.csv",
+    "metric_name": "logloss",
+    "final_loss": "0.00014894833373981306",
+    "train_time": 1.187925100326538,
+    "is_stacked": false,
+    "joblib_version": "1.4.2",
+    "threshold": 0.00014749111142009497
+}
