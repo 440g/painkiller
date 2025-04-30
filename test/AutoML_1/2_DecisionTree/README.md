@@ -20,37 +20,37 @@ logloss
 
 ## Training time
 
-3.5 seconds
+6.3 seconds
 
 ## Metric details
-|           |       score |   threshold |
-|:----------|------------:|------------:|
-| logloss   | 1.19209e-07 |         nan |
-| auc       | 1           |         nan |
-| f1        | 1           |           0 |
-| accuracy  | 1           |           0 |
-| precision | 1           |           0 |
-| recall    | 1           |           0 |
-| mcc       | 1           |           0 |
+|           |    score |   threshold |
+|:----------|---------:|------------:|
+| logloss   | 0.66961  |  nan        |
+| auc       | 0.621314 |  nan        |
+| f1        | 0.662248 |    0.272546 |
+| accuracy  | 0.595946 |    0.482857 |
+| precision | 0.774648 |    0.638926 |
+| recall    | 1        |    0.272546 |
+| mcc       | 0.191681 |    0.482857 |
 
 
 ## Metric details with threshold from accuracy metric
-|           |       score |   threshold |
-|:----------|------------:|------------:|
-| logloss   | 1.19209e-07 |         nan |
-| auc       | 1           |         nan |
-| f1        | 1           |           0 |
-| accuracy  | 1           |           0 |
-| precision | 1           |           0 |
-| recall    | 1           |           0 |
-| mcc       | 1           |           0 |
+|           |    score |   threshold |
+|:----------|---------:|------------:|
+| logloss   | 0.66961  |  nan        |
+| auc       | 0.621314 |  nan        |
+| f1        | 0.587207 |    0.482857 |
+| accuracy  | 0.595946 |    0.482857 |
+| precision | 0.594041 |    0.482857 |
+| recall    | 0.580528 |    0.482857 |
+| mcc       | 0.191681 |    0.482857 |
 
 
-## Confusion matrix (at threshold=0.0)
+## Confusion matrix (at threshold=0.482857)
 |              |   Predicted as 0 |   Predicted as 1 |
 |:-------------|-----------------:|-----------------:|
-| Labeled as 0 |             2242 |                0 |
-| Labeled as 1 |                0 |             2198 |
+| Labeled as 0 |             1370 |              872 |
+| Labeled as 1 |              922 |             1276 |
 
 ## Learning curves
 ![Learning curves](learning_curves.png)

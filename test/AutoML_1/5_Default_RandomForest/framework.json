@@ -1,5 +1,5 @@
 {
-    "uid": "c61cafc8-e8ae-45d6-8e67-8ef19679da0d",
+    "uid": "678eb3c6-2c18-41b7-b5d7-e10e5984aa4f",
     "name": "5_Default_RandomForest",
     "preprocessing": [
         {
@@ -241,7 +241,7 @@
             "library_version": "1.6.1",
             "algorithm_name": "Random Forest",
             "algorithm_short_name": "Random Forest",
-            "uid": "948ab39a-4e5e-4647-8299-13d5a3398948",
+            "uid": "975addf9-fdde-4c6b-9cc7-213ff5049d91",
             "params": {
                 "model_type": "Random Forest",
                 "ml_task": "binary_classification",
@@ -451,9 +451,9 @@
     ],
     "predictions_fname": "5_Default_RandomForest/predictions_validation.csv",
     "metric_name": "logloss",
-    "final_loss": "1.1920929665620914e-07",
-    "train_time": 2.748633623123169,
+    "final_loss": "0.6480618756443647",
+    "train_time": 9.356180906295776,
     "is_stacked": false,
     "joblib_version": "1.4.2",
-    "threshold": 0.0
+    "threshold": 0.4975413725662737
 }

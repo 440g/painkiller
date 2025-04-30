@@ -46,11 +46,10 @@
         "abs_title_subjectivity",
         "abs_title_sentiment_polarity",
         "data_channel",
-        "weekday",
-        "shares"
+        "weekday"
     ],
     "rows": 17760,
-    "cols": 48,
+    "cols": 47,
     "target_is_numeric": true,
     "columns_info": {
         "id": [
@@ -223,13 +222,10 @@
             "missing_values",
             "categorical",
             "few_categories"
-        ],
-        "shares": [
-            "scale"
         ]
     },
     "target_info": [],
-    "n_features": 48,
+    "n_features": 47,
     "is_sample_weighted": false,
     "is_fairness_applied": false,
     "n_classes": 2
