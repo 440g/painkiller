@@ -13,10 +13,8 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 
 automl = AutoML(
-    mode="Explain",
-    total_time_limit=60,
-    eval_metric="logloss",
-    explain_level=1
+    mode="Perform",
+    explain_level=2
 )
 
 automl.fit(X_train, y_train)
