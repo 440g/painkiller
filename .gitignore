@@ -3,3 +3,4 @@
 test/AutoML_1/
 test/AutoML_2/[0-9]*
 !test/AutoML_2/43_CatBoost_SelectedFeatures
+git.ipynb
