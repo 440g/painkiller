@@ -1,9 +1,0 @@
-[
-    "global_sentiment_polarity",
-    "num_keywords",
-    "n_non_stop_words",
-    "rate_negative_words",
-    "max_negative_polarity",
-    "rate_positive_words",
-    "random_feature"
-]
