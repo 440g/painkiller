@@ -1,0 +1,1416 @@
+{
+    "uid": "93656e9d-94e5-41a7-8b77-e5cae38bffac",
+    "name": "43_CatBoost_SelectedFeatures",
+    "preprocessing": [
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "n_tokens_title": 10.0,
+                        "n_tokens_content": 411.0,
+                        "n_unique_tokens": 0.5400770362580001,
+                        "n_non_stop_words": 0.999999996,
+                        "n_non_stop_unique_tokens": 0.691516707734,
+                        "num_hrefs": 8.0,
+                        "num_self_hrefs": 3.0,
+                        "num_imgs": 1.0,
+                        "num_videos": 0.0,
+                        "average_token_length": 4.66666666667,
+                        "num_keywords": 7.0,
+                        "kw_min_min": -1.0,
+                        "kw_max_min": 659.0,
+                        "kw_avg_min": 235.910277778,
+                        "kw_min_max": 1500.0,
+                        "kw_max_max": 843300.0,
+                        "kw_avg_max": 244429.607143,
+                        "kw_min_avg": 1039.24390244,
+                        "kw_max_avg": 4352.13808216,
+                        "kw_avg_avg": 2866.6230308100003,
+                        "self_reference_min_shares": 1200.0,
+                        "self_reference_max_shares": 2800.0,
+                        "self_reference_avg_sharess": 2214.75,
+                        "LDA_00": 0.0333759438618,
+                        "LDA_01": 0.0333469928194,
+                        "LDA_02": 0.0400200640343,
+                        "LDA_03": 0.0400008220173,
+                        "LDA_04": 0.040817026574,
+                        "global_subjectivity": 0.4529662563965,
+                        "global_sentiment_polarity": 0.1187691343625,
+                        "global_rate_positive_words": 0.0390625,
+                        "global_rate_negative_words": 0.015279688565,
+                        "rate_positive_words": 0.7106848446415,
+                        "rate_negative_words": 0.277777777778,
+                        "avg_positive_polarity": 0.359025974026,
+                        "min_positive_polarity": 0.1,
+                        "max_positive_polarity": 0.8,
+                        "avg_negative_polarity": -0.251666666667,
+                        "min_negative_polarity": -0.5,
+                        "max_negative_polarity": -0.1,
+                        "title_subjectivity": 0.15,
+                        "title_sentiment_polarity": 0.0,
+                        "abs_title_subjectivity": 0.5,
+                        "abs_title_sentiment_polarity": 0.0,
+                        "data_channel": "World",
+                        "weekday": "Tuesday"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "ml_task": "binary_classification",
+            "drop_features": [
+                "global_sentiment_polarity",
+                "num_keywords",
+                "n_non_stop_words",
+                "rate_negative_words",
+                "max_negative_polarity",
+                "rate_positive_words"
+            ],
+            "params": {
+                "columns_preprocessing": {
+                    "n_tokens_title": [
+                        "na_fill_median"
+                    ],
+                    "n_tokens_content": [
+                        "na_fill_median"
+                    ],
+                    "n_unique_tokens": [
+                        "na_fill_median"
+                    ],
+                    "n_non_stop_words": [
+                        "na_fill_median"
+                    ],
+                    "n_non_stop_unique_tokens": [
+                        "na_fill_median"
+                    ],
+                    "num_hrefs": [
+                        "na_fill_median"
+                    ],
+                    "num_self_hrefs": [
+                        "na_fill_median"
+                    ],
+                    "num_imgs": [
+                        "na_fill_median"
+                    ],
+                    "num_videos": [
+                        "na_fill_median"
+                    ],
+                    "average_token_length": [
+                        "na_fill_median"
+                    ],
+                    "num_keywords": [
+                        "na_fill_median"
+                    ],
+                    "kw_min_min": [
+                        "na_fill_median"
+                    ],
+                    "kw_max_min": [
+                        "na_fill_median"
+                    ],
+                    "kw_avg_min": [
+                        "na_fill_median"
+                    ],
+                    "kw_min_max": [
+                        "na_fill_median"
+                    ],
+                    "kw_max_max": [
+                        "na_fill_median"
+                    ],
+                    "kw_avg_max": [
+                        "na_fill_median"
+                    ],
+                    "kw_min_avg": [
+                        "na_fill_median"
+                    ],
+                    "kw_max_avg": [
+                        "na_fill_median"
+                    ],
+                    "kw_avg_avg": [
+                        "na_fill_median"
+                    ],
+                    "self_reference_min_shares": [
+                        "na_fill_median"
+                    ],
+                    "self_reference_max_shares": [
+                        "na_fill_median"
+                    ],
+                    "self_reference_avg_sharess": [
+                        "na_fill_median"
+                    ],
+                    "LDA_00": [
+                        "na_fill_median"
+                    ],
+                    "LDA_01": [
+                        "na_fill_median"
+                    ],
+                    "LDA_02": [
+                        "na_fill_median"
+                    ],
+                    "LDA_03": [
+                        "na_fill_median"
+                    ],
+                    "LDA_04": [
+                        "na_fill_median"
+                    ],
+                    "global_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "global_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "global_rate_positive_words": [
+                        "na_fill_median"
+                    ],
+                    "global_rate_negative_words": [
+                        "na_fill_median"
+                    ],
+                    "rate_positive_words": [
+                        "na_fill_median"
+                    ],
+                    "rate_negative_words": [
+                        "na_fill_median"
+                    ],
+                    "avg_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "min_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "max_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "avg_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "min_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "max_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "title_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "title_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "abs_title_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "abs_title_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "data_channel": [
+                        "na_fill_median"
+                    ],
+                    "weekday": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "drop_features": [
+                    "global_sentiment_polarity",
+                    "num_keywords",
+                    "n_non_stop_words",
+                    "rate_negative_words",
+                    "max_negative_polarity",
+                    "rate_positive_words",
+                    "random_feature"
+                ]
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "n_tokens_title": 10.0,
+                        "n_tokens_content": 411.0,
+                        "n_unique_tokens": 0.5389564895325,
+                        "n_non_stop_words": 0.999999996,
+                        "n_non_stop_unique_tokens": 0.690582956544,
+                        "num_hrefs": 8.0,
+                        "num_self_hrefs": 3.0,
+                        "num_imgs": 1.0,
+                        "num_videos": 0.0,
+                        "average_token_length": 4.664555249315001,
+                        "num_keywords": 7.0,
+                        "kw_min_min": -1.0,
+                        "kw_max_min": 655.0,
+                        "kw_avg_min": 235.472222222,
+                        "kw_min_max": 1500.0,
+                        "kw_max_max": 843300.0,
+                        "kw_avg_max": 245501.142857,
+                        "kw_min_avg": 1034.0625,
+                        "kw_max_avg": 4350.84615385,
+                        "kw_avg_avg": 2872.38909324,
+                        "self_reference_min_shares": 1200.0,
+                        "self_reference_max_shares": 2900.0,
+                        "self_reference_avg_sharess": 2250.0,
+                        "LDA_00": 0.03336844329885,
+                        "LDA_01": 0.03334661059565,
+                        "LDA_02": 0.0400078664618,
+                        "LDA_03": 0.0400006999185,
+                        "LDA_04": 0.0404899837961,
+                        "global_subjectivity": 0.45313286187,
+                        "global_sentiment_polarity": 0.1194361020925,
+                        "global_rate_positive_words": 0.039070749736,
+                        "global_rate_negative_words": 0.0153846153846,
+                        "rate_positive_words": 0.709677419355,
+                        "rate_negative_words": 0.277777777778,
+                        "avg_positive_polarity": 0.360001803752,
+                        "min_positive_polarity": 0.1,
+                        "max_positive_polarity": 0.8,
+                        "avg_negative_polarity": -0.252888888889,
+                        "min_negative_polarity": -0.5,
+                        "max_negative_polarity": -0.1,
+                        "title_subjectivity": 0.125,
+                        "title_sentiment_polarity": 0.0,
+                        "abs_title_subjectivity": 0.5,
+                        "abs_title_sentiment_polarity": 0.0,
+                        "data_channel": "World",
+                        "weekday": "Wednesday"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "ml_task": "binary_classification",
+            "drop_features": [
+                "global_sentiment_polarity",
+                "num_keywords",
+                "n_non_stop_words",
+                "rate_negative_words",
+                "max_negative_polarity",
+                "rate_positive_words"
+            ],
+            "params": {
+                "columns_preprocessing": {
+                    "n_tokens_title": [
+                        "na_fill_median"
+                    ],
+                    "n_tokens_content": [
+                        "na_fill_median"
+                    ],
+                    "n_unique_tokens": [
+                        "na_fill_median"
+                    ],
+                    "n_non_stop_words": [
+                        "na_fill_median"
+                    ],
+                    "n_non_stop_unique_tokens": [
+                        "na_fill_median"
+                    ],
+                    "num_hrefs": [
+                        "na_fill_median"
+                    ],
+                    "num_self_hrefs": [
+                        "na_fill_median"
+                    ],
+                    "num_imgs": [
+                        "na_fill_median"
+                    ],
+                    "num_videos": [
+                        "na_fill_median"
+                    ],
+                    "average_token_length": [
+                        "na_fill_median"
+                    ],
+                    "num_keywords": [
+                        "na_fill_median"
+                    ],
+                    "kw_min_min": [
+                        "na_fill_median"
+                    ],
+                    "kw_max_min": [
+                        "na_fill_median"
+                    ],
+                    "kw_avg_min": [
+                        "na_fill_median"
+                    ],
+                    "kw_min_max": [
+                        "na_fill_median"
+                    ],
+                    "kw_max_max": [
+                        "na_fill_median"
+                    ],
+                    "kw_avg_max": [
+                        "na_fill_median"
+                    ],
+                    "kw_min_avg": [
+                        "na_fill_median"
+                    ],
+                    "kw_max_avg": [
+                        "na_fill_median"
+                    ],
+                    "kw_avg_avg": [
+                        "na_fill_median"
+                    ],
+                    "self_reference_min_shares": [
+                        "na_fill_median"
+                    ],
+                    "self_reference_max_shares": [
+                        "na_fill_median"
+                    ],
+                    "self_reference_avg_sharess": [
+                        "na_fill_median"
+                    ],
+                    "LDA_00": [
+                        "na_fill_median"
+                    ],
+                    "LDA_01": [
+                        "na_fill_median"
+                    ],
+                    "LDA_02": [
+                        "na_fill_median"
+                    ],
+                    "LDA_03": [
+                        "na_fill_median"
+                    ],
+                    "LDA_04": [
+                        "na_fill_median"
+                    ],
+                    "global_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "global_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "global_rate_positive_words": [
+                        "na_fill_median"
+                    ],
+                    "global_rate_negative_words": [
+                        "na_fill_median"
+                    ],
+                    "rate_positive_words": [
+                        "na_fill_median"
+                    ],
+                    "rate_negative_words": [
+                        "na_fill_median"
+                    ],
+                    "avg_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "min_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "max_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "avg_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "min_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "max_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "title_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "title_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "abs_title_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "abs_title_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "data_channel": [
+                        "na_fill_median"
+                    ],
+                    "weekday": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "drop_features": [
+                    "global_sentiment_polarity",
+                    "num_keywords",
+                    "n_non_stop_words",
+                    "rate_negative_words",
+                    "max_negative_polarity",
+                    "rate_positive_words",
+                    "random_feature"
+                ]
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "n_tokens_title": 10.0,
+                        "n_tokens_content": 406.0,
+                        "n_unique_tokens": 0.540305009716,
+                        "n_non_stop_words": 0.999999995951,
+                        "n_non_stop_unique_tokens": 0.691428567478,
+                        "num_hrefs": 7.0,
+                        "num_self_hrefs": 3.0,
+                        "num_imgs": 1.0,
+                        "num_videos": 0.0,
+                        "average_token_length": 4.66158730159,
+                        "num_keywords": 7.0,
+                        "kw_min_min": -1.0,
+                        "kw_max_min": 657.0,
+                        "kw_avg_min": 236.44875,
+                        "kw_min_max": 1500.0,
+                        "kw_max_max": 843300.0,
+                        "kw_avg_max": 245723.5714285,
+                        "kw_min_avg": 1031.4,
+                        "kw_max_avg": 4348.84705882,
+                        "kw_avg_avg": 2873.05971102,
+                        "self_reference_min_shares": 1200.0,
+                        "self_reference_max_shares": 2900.0,
+                        "self_reference_avg_sharess": 2200.0,
+                        "LDA_00": 0.0333759438618,
+                        "LDA_01": 0.0333471601251,
+                        "LDA_02": 0.0400087847359,
+                        "LDA_03": 0.0400010900817,
+                        "LDA_04": 0.04083868779660001,
+                        "global_subjectivity": 0.453253719461,
+                        "global_sentiment_polarity": 0.1191314538165,
+                        "global_rate_positive_words": 0.0390591469957,
+                        "global_rate_negative_words": 0.0152801358234,
+                        "rate_positive_words": 0.710526315789,
+                        "rate_negative_words": 0.277777777778,
+                        "avg_positive_polarity": 0.359307359307,
+                        "min_positive_polarity": 0.1,
+                        "max_positive_polarity": 0.8,
+                        "avg_negative_polarity": -0.2525,
+                        "min_negative_polarity": -0.5,
+                        "max_negative_polarity": -0.1,
+                        "title_subjectivity": 0.144444444444,
+                        "title_sentiment_polarity": 0.0,
+                        "abs_title_subjectivity": 0.5,
+                        "abs_title_sentiment_polarity": 0.0,
+                        "data_channel": "World",
+                        "weekday": "Tuesday"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "ml_task": "binary_classification",
+            "drop_features": [
+                "global_sentiment_polarity",
+                "num_keywords",
+                "n_non_stop_words",
+                "rate_negative_words",
+                "max_negative_polarity",
+                "rate_positive_words"
+            ],
+            "params": {
+                "columns_preprocessing": {
+                    "n_tokens_title": [
+                        "na_fill_median"
+                    ],
+                    "n_tokens_content": [
+                        "na_fill_median"
+                    ],
+                    "n_unique_tokens": [
+                        "na_fill_median"
+                    ],
+                    "n_non_stop_words": [
+                        "na_fill_median"
+                    ],
+                    "n_non_stop_unique_tokens": [
+                        "na_fill_median"
+                    ],
+                    "num_hrefs": [
+                        "na_fill_median"
+                    ],
+                    "num_self_hrefs": [
+                        "na_fill_median"
+                    ],
+                    "num_imgs": [
+                        "na_fill_median"
+                    ],
+                    "num_videos": [
+                        "na_fill_median"
+                    ],
+                    "average_token_length": [
+                        "na_fill_median"
+                    ],
+                    "num_keywords": [
+                        "na_fill_median"
+                    ],
+                    "kw_min_min": [
+                        "na_fill_median"
+                    ],
+                    "kw_max_min": [
+                        "na_fill_median"
+                    ],
+                    "kw_avg_min": [
+                        "na_fill_median"
+                    ],
+                    "kw_min_max": [
+                        "na_fill_median"
+                    ],
+                    "kw_max_max": [
+                        "na_fill_median"
+                    ],
+                    "kw_avg_max": [
+                        "na_fill_median"
+                    ],
+                    "kw_min_avg": [
+                        "na_fill_median"
+                    ],
+                    "kw_max_avg": [
+                        "na_fill_median"
+                    ],
+                    "kw_avg_avg": [
+                        "na_fill_median"
+                    ],
+                    "self_reference_min_shares": [
+                        "na_fill_median"
+                    ],
+                    "self_reference_max_shares": [
+                        "na_fill_median"
+                    ],
+                    "self_reference_avg_sharess": [
+                        "na_fill_median"
+                    ],
+                    "LDA_00": [
+                        "na_fill_median"
+                    ],
+                    "LDA_01": [
+                        "na_fill_median"
+                    ],
+                    "LDA_02": [
+                        "na_fill_median"
+                    ],
+                    "LDA_03": [
+                        "na_fill_median"
+                    ],
+                    "LDA_04": [
+                        "na_fill_median"
+                    ],
+                    "global_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "global_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "global_rate_positive_words": [
+                        "na_fill_median"
+                    ],
+                    "global_rate_negative_words": [
+                        "na_fill_median"
+                    ],
+                    "rate_positive_words": [
+                        "na_fill_median"
+                    ],
+                    "rate_negative_words": [
+                        "na_fill_median"
+                    ],
+                    "avg_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "min_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "max_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "avg_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "min_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "max_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "title_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "title_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "abs_title_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "abs_title_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "data_channel": [
+                        "na_fill_median"
+                    ],
+                    "weekday": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "drop_features": [
+                    "global_sentiment_polarity",
+                    "num_keywords",
+                    "n_non_stop_words",
+                    "rate_negative_words",
+                    "max_negative_polarity",
+                    "rate_positive_words",
+                    "random_feature"
+                ]
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "n_tokens_title": 10.0,
+                        "n_tokens_content": 411.0,
+                        "n_unique_tokens": 0.539287493201,
+                        "n_non_stop_words": 0.999999996,
+                        "n_non_stop_unique_tokens": 0.691176468047,
+                        "num_hrefs": 7.0,
+                        "num_self_hrefs": 3.0,
+                        "num_imgs": 1.0,
+                        "num_videos": 0.0,
+                        "average_token_length": 4.66666666667,
+                        "num_keywords": 7.0,
+                        "kw_min_min": -1.0,
+                        "kw_max_min": 656.0,
+                        "kw_avg_min": 237.0,
+                        "kw_min_max": 1400.0,
+                        "kw_max_max": 843300.0,
+                        "kw_avg_max": 244111.111111,
+                        "kw_min_avg": 1024.18181818,
+                        "kw_max_avg": 4342.40445168,
+                        "kw_avg_avg": 2864.926598255,
+                        "self_reference_min_shares": 1200.0,
+                        "self_reference_max_shares": 2900.0,
+                        "self_reference_avg_sharess": 2212.0,
+                        "LDA_00": 0.0333680474067,
+                        "LDA_01": 0.0333460976733,
+                        "LDA_02": 0.04000690620115,
+                        "LDA_03": 0.0400007222328,
+                        "LDA_04": 0.0406195547333,
+                        "global_subjectivity": 0.453385087135,
+                        "global_sentiment_polarity": 0.119674603175,
+                        "global_rate_positive_words": 0.0391644908616,
+                        "global_rate_negative_words": 0.0152505446623,
+                        "rate_positive_words": 0.710526315789,
+                        "rate_negative_words": 0.277777777778,
+                        "avg_positive_polarity": 0.359090909091,
+                        "min_positive_polarity": 0.1,
+                        "max_positive_polarity": 0.8,
+                        "avg_negative_polarity": -0.25232928240749997,
+                        "min_negative_polarity": -0.5,
+                        "max_negative_polarity": -0.1,
+                        "title_subjectivity": 0.125,
+                        "title_sentiment_polarity": 0.0,
+                        "abs_title_subjectivity": 0.5,
+                        "abs_title_sentiment_polarity": 0.0,
+                        "data_channel": "World",
+                        "weekday": "Wednesday"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "ml_task": "binary_classification",
+            "drop_features": [
+                "global_sentiment_polarity",
+                "num_keywords",
+                "n_non_stop_words",
+                "rate_negative_words",
+                "max_negative_polarity",
+                "rate_positive_words"
+            ],
+            "params": {
+                "columns_preprocessing": {
+                    "n_tokens_title": [
+                        "na_fill_median"
+                    ],
+                    "n_tokens_content": [
+                        "na_fill_median"
+                    ],
+                    "n_unique_tokens": [
+                        "na_fill_median"
+                    ],
+                    "n_non_stop_words": [
+                        "na_fill_median"
+                    ],
+                    "n_non_stop_unique_tokens": [
+                        "na_fill_median"
+                    ],
+                    "num_hrefs": [
+                        "na_fill_median"
+                    ],
+                    "num_self_hrefs": [
+                        "na_fill_median"
+                    ],
+                    "num_imgs": [
+                        "na_fill_median"
+                    ],
+                    "num_videos": [
+                        "na_fill_median"
+                    ],
+                    "average_token_length": [
+                        "na_fill_median"
+                    ],
+                    "num_keywords": [
+                        "na_fill_median"
+                    ],
+                    "kw_min_min": [
+                        "na_fill_median"
+                    ],
+                    "kw_max_min": [
+                        "na_fill_median"
+                    ],
+                    "kw_avg_min": [
+                        "na_fill_median"
+                    ],
+                    "kw_min_max": [
+                        "na_fill_median"
+                    ],
+                    "kw_max_max": [
+                        "na_fill_median"
+                    ],
+                    "kw_avg_max": [
+                        "na_fill_median"
+                    ],
+                    "kw_min_avg": [
+                        "na_fill_median"
+                    ],
+                    "kw_max_avg": [
+                        "na_fill_median"
+                    ],
+                    "kw_avg_avg": [
+                        "na_fill_median"
+                    ],
+                    "self_reference_min_shares": [
+                        "na_fill_median"
+                    ],
+                    "self_reference_max_shares": [
+                        "na_fill_median"
+                    ],
+                    "self_reference_avg_sharess": [
+                        "na_fill_median"
+                    ],
+                    "LDA_00": [
+                        "na_fill_median"
+                    ],
+                    "LDA_01": [
+                        "na_fill_median"
+                    ],
+                    "LDA_02": [
+                        "na_fill_median"
+                    ],
+                    "LDA_03": [
+                        "na_fill_median"
+                    ],
+                    "LDA_04": [
+                        "na_fill_median"
+                    ],
+                    "global_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "global_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "global_rate_positive_words": [
+                        "na_fill_median"
+                    ],
+                    "global_rate_negative_words": [
+                        "na_fill_median"
+                    ],
+                    "rate_positive_words": [
+                        "na_fill_median"
+                    ],
+                    "rate_negative_words": [
+                        "na_fill_median"
+                    ],
+                    "avg_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "min_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "max_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "avg_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "min_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "max_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "title_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "title_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "abs_title_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "abs_title_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "data_channel": [
+                        "na_fill_median"
+                    ],
+                    "weekday": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "drop_features": [
+                    "global_sentiment_polarity",
+                    "num_keywords",
+                    "n_non_stop_words",
+                    "rate_negative_words",
+                    "max_negative_polarity",
+                    "rate_positive_words",
+                    "random_feature"
+                ]
+            }
+        },
+        {
+            "missing_values": [
+                {
+                    "fill_method": "na_fill_median",
+                    "fill_params": {
+                        "n_tokens_title": 10.0,
+                        "n_tokens_content": 412.0,
+                        "n_unique_tokens": 0.539682538459,
+                        "n_non_stop_words": 0.999999996,
+                        "n_non_stop_unique_tokens": 0.690410957013,
+                        "num_hrefs": 8.0,
+                        "num_self_hrefs": 3.0,
+                        "num_imgs": 1.0,
+                        "num_videos": 0.0,
+                        "average_token_length": 4.66740088106,
+                        "num_keywords": 7.0,
+                        "kw_min_min": -1.0,
+                        "kw_max_min": 657.0,
+                        "kw_avg_min": 236.0,
+                        "kw_min_max": 1500.0,
+                        "kw_max_max": 843300.0,
+                        "kw_avg_max": 244133.333333,
+                        "kw_min_avg": 1034.3954545450001,
+                        "kw_max_avg": 4348.84574076,
+                        "kw_avg_avg": 2864.55767717,
+                        "self_reference_min_shares": 1200.0,
+                        "self_reference_max_shares": 2800.0,
+                        "self_reference_avg_sharess": 2200.0,
+                        "LDA_00": 0.03338622256745,
+                        "LDA_01": 0.03334648983685,
+                        "LDA_02": 0.0400079278246,
+                        "LDA_03": 0.040000901208,
+                        "LDA_04": 0.0409541883245,
+                        "global_subjectivity": 0.453281037794,
+                        "global_sentiment_polarity": 0.119716668565,
+                        "global_rate_positive_words": 0.038961038961,
+                        "global_rate_negative_words": 0.0152380952381,
+                        "rate_positive_words": 0.709677419355,
+                        "rate_negative_words": 0.28,
+                        "avg_positive_polarity": 0.359402230766,
+                        "min_positive_polarity": 0.1,
+                        "max_positive_polarity": 0.8,
+                        "avg_negative_polarity": -0.252777777778,
+                        "min_negative_polarity": -0.5,
+                        "max_negative_polarity": -0.1,
+                        "title_subjectivity": 0.15,
+                        "title_sentiment_polarity": 0.0,
+                        "abs_title_subjectivity": 0.5,
+                        "abs_title_sentiment_polarity": 0.0,
+                        "data_channel": "World",
+                        "weekday": "Wednesday"
+                    },
+                    "datetime_columns": []
+                }
+            ],
+            "ml_task": "binary_classification",
+            "drop_features": [
+                "global_sentiment_polarity",
+                "num_keywords",
+                "n_non_stop_words",
+                "rate_negative_words",
+                "max_negative_polarity",
+                "rate_positive_words"
+            ],
+            "params": {
+                "columns_preprocessing": {
+                    "n_tokens_title": [
+                        "na_fill_median"
+                    ],
+                    "n_tokens_content": [
+                        "na_fill_median"
+                    ],
+                    "n_unique_tokens": [
+                        "na_fill_median"
+                    ],
+                    "n_non_stop_words": [
+                        "na_fill_median"
+                    ],
+                    "n_non_stop_unique_tokens": [
+                        "na_fill_median"
+                    ],
+                    "num_hrefs": [
+                        "na_fill_median"
+                    ],
+                    "num_self_hrefs": [
+                        "na_fill_median"
+                    ],
+                    "num_imgs": [
+                        "na_fill_median"
+                    ],
+                    "num_videos": [
+                        "na_fill_median"
+                    ],
+                    "average_token_length": [
+                        "na_fill_median"
+                    ],
+                    "num_keywords": [
+                        "na_fill_median"
+                    ],
+                    "kw_min_min": [
+                        "na_fill_median"
+                    ],
+                    "kw_max_min": [
+                        "na_fill_median"
+                    ],
+                    "kw_avg_min": [
+                        "na_fill_median"
+                    ],
+                    "kw_min_max": [
+                        "na_fill_median"
+                    ],
+                    "kw_max_max": [
+                        "na_fill_median"
+                    ],
+                    "kw_avg_max": [
+                        "na_fill_median"
+                    ],
+                    "kw_min_avg": [
+                        "na_fill_median"
+                    ],
+                    "kw_max_avg": [
+                        "na_fill_median"
+                    ],
+                    "kw_avg_avg": [
+                        "na_fill_median"
+                    ],
+                    "self_reference_min_shares": [
+                        "na_fill_median"
+                    ],
+                    "self_reference_max_shares": [
+                        "na_fill_median"
+                    ],
+                    "self_reference_avg_sharess": [
+                        "na_fill_median"
+                    ],
+                    "LDA_00": [
+                        "na_fill_median"
+                    ],
+                    "LDA_01": [
+                        "na_fill_median"
+                    ],
+                    "LDA_02": [
+                        "na_fill_median"
+                    ],
+                    "LDA_03": [
+                        "na_fill_median"
+                    ],
+                    "LDA_04": [
+                        "na_fill_median"
+                    ],
+                    "global_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "global_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "global_rate_positive_words": [
+                        "na_fill_median"
+                    ],
+                    "global_rate_negative_words": [
+                        "na_fill_median"
+                    ],
+                    "rate_positive_words": [
+                        "na_fill_median"
+                    ],
+                    "rate_negative_words": [
+                        "na_fill_median"
+                    ],
+                    "avg_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "min_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "max_positive_polarity": [
+                        "na_fill_median"
+                    ],
+                    "avg_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "min_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "max_negative_polarity": [
+                        "na_fill_median"
+                    ],
+                    "title_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "title_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "abs_title_subjectivity": [
+                        "na_fill_median"
+                    ],
+                    "abs_title_sentiment_polarity": [
+                        "na_fill_median"
+                    ],
+                    "data_channel": [
+                        "na_fill_median"
+                    ],
+                    "weekday": [
+                        "na_fill_median"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "drop_features": [
+                    "global_sentiment_polarity",
+                    "num_keywords",
+                    "n_non_stop_words",
+                    "rate_negative_words",
+                    "max_negative_polarity",
+                    "rate_positive_words",
+                    "random_feature"
+                ]
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.2.8",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "c0c235d7-d646-40f6-af99-ea713d04b3e5",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1235,
+                "learning_rate": 0.025,
+                "depth": 8,
+                "rsm": 0.9,
+                "loss_function": "Logloss",
+                "eval_metric": "Logloss",
+                "explain_level": 2
+            },
+            "name": "learner_fold_0",
+            "best_ntree_limit": 576
+        },
+        {
+            "library_version": "1.2.8",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "96a26ad3-3b44-46cf-8c39-3a06ba6b99c6",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1235,
+                "learning_rate": 0.025,
+                "depth": 8,
+                "rsm": 0.9,
+                "loss_function": "Logloss",
+                "eval_metric": "Logloss",
+                "explain_level": 2
+            },
+            "name": "learner_fold_1",
+            "best_ntree_limit": 519
+        },
+        {
+            "library_version": "1.2.8",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "6c31459e-5aac-4db3-ab43-d094c8b94f56",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1235,
+                "learning_rate": 0.025,
+                "depth": 8,
+                "rsm": 0.9,
+                "loss_function": "Logloss",
+                "eval_metric": "Logloss",
+                "explain_level": 2
+            },
+            "name": "learner_fold_2",
+            "best_ntree_limit": 505
+        },
+        {
+            "library_version": "1.2.8",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "48d15185-1485-4ec2-80e3-62932c38f213",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1235,
+                "learning_rate": 0.025,
+                "depth": 8,
+                "rsm": 0.9,
+                "loss_function": "Logloss",
+                "eval_metric": "Logloss",
+                "explain_level": 2
+            },
+            "name": "learner_fold_3",
+            "best_ntree_limit": 639
+        },
+        {
+            "library_version": "1.2.8",
+            "algorithm_name": "CatBoost",
+            "algorithm_short_name": "CatBoost",
+            "uid": "8010cf7f-ab7f-434a-83d5-d59157c2be43",
+            "params": {
+                "model_type": "CatBoost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1235,
+                "learning_rate": 0.025,
+                "depth": 8,
+                "rsm": 0.9,
+                "loss_function": "Logloss",
+                "eval_metric": "Logloss",
+                "explain_level": 2
+            },
+            "name": "learner_fold_4",
+            "best_ntree_limit": 464
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "n_tokens_title": [
+                    "na_fill_median"
+                ],
+                "n_tokens_content": [
+                    "na_fill_median"
+                ],
+                "n_unique_tokens": [
+                    "na_fill_median"
+                ],
+                "n_non_stop_words": [
+                    "na_fill_median"
+                ],
+                "n_non_stop_unique_tokens": [
+                    "na_fill_median"
+                ],
+                "num_hrefs": [
+                    "na_fill_median"
+                ],
+                "num_self_hrefs": [
+                    "na_fill_median"
+                ],
+                "num_imgs": [
+                    "na_fill_median"
+                ],
+                "num_videos": [
+                    "na_fill_median"
+                ],
+                "average_token_length": [
+                    "na_fill_median"
+                ],
+                "num_keywords": [
+                    "na_fill_median"
+                ],
+                "kw_min_min": [
+                    "na_fill_median"
+                ],
+                "kw_max_min": [
+                    "na_fill_median"
+                ],
+                "kw_avg_min": [
+                    "na_fill_median"
+                ],
+                "kw_min_max": [
+                    "na_fill_median"
+                ],
+                "kw_max_max": [
+                    "na_fill_median"
+                ],
+                "kw_avg_max": [
+                    "na_fill_median"
+                ],
+                "kw_min_avg": [
+                    "na_fill_median"
+                ],
+                "kw_max_avg": [
+                    "na_fill_median"
+                ],
+                "kw_avg_avg": [
+                    "na_fill_median"
+                ],
+                "self_reference_min_shares": [
+                    "na_fill_median"
+                ],
+                "self_reference_max_shares": [
+                    "na_fill_median"
+                ],
+                "self_reference_avg_sharess": [
+                    "na_fill_median"
+                ],
+                "LDA_00": [
+                    "na_fill_median"
+                ],
+                "LDA_01": [
+                    "na_fill_median"
+                ],
+                "LDA_02": [
+                    "na_fill_median"
+                ],
+                "LDA_03": [
+                    "na_fill_median"
+                ],
+                "LDA_04": [
+                    "na_fill_median"
+                ],
+                "global_subjectivity": [
+                    "na_fill_median"
+                ],
+                "global_sentiment_polarity": [
+                    "na_fill_median"
+                ],
+                "global_rate_positive_words": [
+                    "na_fill_median"
+                ],
+                "global_rate_negative_words": [
+                    "na_fill_median"
+                ],
+                "rate_positive_words": [
+                    "na_fill_median"
+                ],
+                "rate_negative_words": [
+                    "na_fill_median"
+                ],
+                "avg_positive_polarity": [
+                    "na_fill_median"
+                ],
+                "min_positive_polarity": [
+                    "na_fill_median"
+                ],
+                "max_positive_polarity": [
+                    "na_fill_median"
+                ],
+                "avg_negative_polarity": [
+                    "na_fill_median"
+                ],
+                "min_negative_polarity": [
+                    "na_fill_median"
+                ],
+                "max_negative_polarity": [
+                    "na_fill_median"
+                ],
+                "title_subjectivity": [
+                    "na_fill_median"
+                ],
+                "title_sentiment_polarity": [
+                    "na_fill_median"
+                ],
+                "abs_title_subjectivity": [
+                    "na_fill_median"
+                ],
+                "abs_title_sentiment_polarity": [
+                    "na_fill_median"
+                ],
+                "data_channel": [
+                    "na_fill_median"
+                ],
+                "weekday": [
+                    "na_fill_median"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "binary_classification",
+            "drop_features": [
+                "global_sentiment_polarity",
+                "num_keywords",
+                "n_non_stop_words",
+                "rate_negative_words",
+                "max_negative_polarity",
+                "rate_positive_words",
+                "random_feature"
+            ]
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 5,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_2/X.data",
+            "y_path": "AutoML_2/y.data",
+            "results_path": "AutoML_2"
+        },
+        "learner": {
+            "model_type": "CatBoost",
+            "ml_task": "binary_classification",
+            "n_jobs": -1,
+            "seed": 1235,
+            "learning_rate": 0.025,
+            "depth": 8,
+            "rsm": 0.9,
+            "loss_function": "Logloss",
+            "eval_metric": "Logloss",
+            "explain_level": 2
+        },
+        "automl_random_state": 1234,
+        "ml_task": "binary_classification",
+        "explain_level": 2,
+        "name": "43_CatBoost_SelectedFeatures",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original_features_selection",
+        "max_time_for_learner": 72.0
+    },
+    "saved": [
+        "43_CatBoost_SelectedFeatures/learner_fold_0.catboost",
+        "43_CatBoost_SelectedFeatures/learner_fold_1.catboost",
+        "43_CatBoost_SelectedFeatures/learner_fold_2.catboost",
+        "43_CatBoost_SelectedFeatures/learner_fold_3.catboost",
+        "43_CatBoost_SelectedFeatures/learner_fold_4.catboost"
+    ],
+    "predictions_fname": "43_CatBoost_SelectedFeatures/predictions_out_of_folds.csv",
+    "metric_name": "logloss",
+    "final_loss": "0.6143013433210611",
+    "train_time": 43.16796803474426,
+    "is_stacked": false,
+    "joblib_version": "1.4.2",
+    "threshold": 0.5052242279716925,
+    "single_prediction_time": 0.042085886001586914
+}
